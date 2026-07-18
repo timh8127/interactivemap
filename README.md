@@ -1,8 +1,13 @@
-# Bellinzona–Locarno Peaks — drone-flight planning aid
+# Ticino Peaks — drone-flight planning aid
 
-Interactive Leaflet map of mountain peaks in the Bellinzona–Locarno area of
-Ticino, Switzerland (bbox ≈ `46.05,8.65` → `46.30,9.05`, covering Gambarogno,
-Monte Tamaro/Lema, Cardada-Cimetta, Val Verzasca, Val Bavona/Robiei).
+Interactive Leaflet map of mountain peaks in the **Canton of Ticino**,
+Switzerland. Peaks and lifts are clipped to the real cantonal administrative
+boundary (not a rectangle), so neighbouring Italian / Graubünden / Valais
+summits are excluded.
+
+> Scope is configurable: `python3 fetch_data.py` covers the whole canton by
+> default; `SCOPE=bbox python3 fetch_data.py` restricts to the original
+> Bellinzona–Locarno rectangle (`46.05,8.65` → `46.30,9.05`).
 
 **This is a planning aid, not a flight clearance.** Every peak shows three
 *independent* signals that are deliberately never merged into one verdict:
@@ -29,9 +34,13 @@ Nothing is hardcoded from memory. All peak/lift/airspace data is derived live by
    peak within **400 m horizontal AND 100 m elevation** (terminal elevation from
    the swisstopo height API). Weaker matches are marked **unconfirmed** — never a
    guessed yes.
-3. **BAZL airspace** — `identify` (`geometryType=esriGeometryPoint`) at each peak
-   **plus an 8-point ~350 m buffer ring**, so a bare point can't miss a zone edge.
-   Records zone name, ban-vs-authorization type, and fetch timestamp.
+3. **BAZL airspace** — the zone polygons are fetched **once** for the whole scope
+   (tiled `identify` with `returnGeometry`), then each peak is tested locally by
+   point-in-polygon, sampling the peak **plus an 8-point ~350 m buffer ring** so a
+   bare point can't miss a zone edge. This keeps a canton-wide run to a few dozen
+   HTTP calls instead of thousands. If the bulk fetch fails, it falls back to the
+   original per-point `identify` (`esriGeometryPoint`) automatically. Records zone
+   name, ban-vs-authorization type, and fetch timestamp.
 4. **Local restrictions** — manual, from `data/local_restrictions.json`; defaults
    to `unknown` on silence, never `allowed`.
 

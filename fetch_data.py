@@ -41,8 +41,23 @@ from datetime import datetime, timezone
 # Configuration
 # --------------------------------------------------------------------------
 
-# bbox as (south, west, north, east) -- Overpass order.
-BBOX = (46.05, 8.65, 46.30, 9.05)
+# Scope. Default is the ENTIRE canton of Ticino, selected by its administrative
+# boundary (so peaks in neighbouring Italy / Graubünden / Valais are excluded
+# even though the bounding box overlaps them). Set SCOPE=bbox to fall back to
+# the original Bellinzona-Locarno rectangle.
+SCOPE = os.environ.get("SCOPE", "canton").strip().lower()
+
+# Canton selector for the Overpass `area` filter.
+CANTON_NAME = "Ticino"
+CANTON_ISO = "CH-TI"
+
+# Bounding boxes as (south, west, north, east) -- Overpass order.
+# The canton bbox is only used for the default map view, the BAZL zone grid,
+# and the geo.admin `mapExtent`; the actual peak/lift selection is clipped to
+# the real cantonal boundary via the area filter above.
+BBOX_CANTON = (45.80, 8.35, 46.65, 9.20)
+BBOX_ORIGINAL = (46.05, 8.65, 46.30, 9.05)
+BBOX = BBOX_CANTON if SCOPE == "canton" else BBOX_ORIGINAL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
@@ -167,14 +182,32 @@ def overpass(query):
     raise RuntimeError(f"all Overpass mirrors failed: {last_err}")
 
 
-def fetch_peaks():
+def _scope_filter(selector):
+    """Return an Overpass statement selecting `selector` within the active scope.
+    Canton mode clips to the real Ticino administrative boundary; bbox mode uses
+    the rectangle. `selector` is e.g. 'node["natural"="peak"]'."""
+    if SCOPE == "canton":
+        return f"{selector}(area.searchArea);"
     s, w, n, e = BBOX
+    return f"{selector}({s},{w},{n},{e});"
+
+
+def _scope_prelude():
+    """Overpass prelude that binds .searchArea in canton mode (empty otherwise)."""
+    if SCOPE == "canton":
+        return (f'area["boundary"="administrative"]["admin_level"="4"]'
+                f'["name"="{CANTON_NAME}"]->.searchArea;')
+    return ""
+
+
+def fetch_peaks():
     q = (
-        "[out:json][timeout:120];"
-        f'node["natural"="peak"]({s},{w},{n},{e});'
-        "out body;"
+        "[out:json][timeout:180];"
+        + _scope_prelude()
+        + _scope_filter('node["natural"="peak"]')
+        + "out body;"
     )
-    print("STEP 1: querying Overpass for natural=peak ...")
+    print(f"STEP 1: querying Overpass for natural=peak (scope={SCOPE}) ...")
     res = overpass(q)
     peaks = []
     for el in res.get("elements", []):
@@ -212,16 +245,16 @@ def fetch_peaks():
 
 
 def fetch_lifts():
-    s, w, n, e = BBOX
     q = (
-        "[out:json][timeout:120];"
-        "("
-        f'  way["aerialway"~"cable_car|gondola|chair_lift"]({s},{w},{n},{e});'
-        f'  relation["aerialway"~"cable_car|gondola|chair_lift"]({s},{w},{n},{e});'
-        ");"
-        "out body geom;"
+        "[out:json][timeout:180];"
+        + _scope_prelude()
+        + "("
+        + _scope_filter('way["aerialway"~"cable_car|gondola|chair_lift"]')
+        + _scope_filter('relation["aerialway"~"cable_car|gondola|chair_lift"]')
+        + ");"
+        + "out body geom;"
     )
-    print("STEP 1: querying Overpass for aerialway lifts ...")
+    print(f"STEP 1: querying Overpass for aerialway lifts (scope={SCOPE}) ...")
     res = overpass(q)
     lifts = []
     for el in res.get("elements", []):
@@ -373,7 +406,123 @@ def classify_restriction(text):
     return "see_source"
 
 
-def identify_bazl(lat, lon):
+def _label_and_type(attrs):
+    """Human label + ban/authorization classification from feature attributes."""
+    label = (attrs.get("name") or attrs.get("label") or attrs.get("bezeichnung")
+             or attrs.get("description") or attrs.get("beschreibung") or "")
+    blob = " ".join(str(v) for v in attrs.values())
+    return (label or "(unnamed BAZL zone)"), classify_restriction(blob)
+
+
+# ---- Efficient path: fetch all zone polygons once, test peaks locally --------
+
+def _rings_from_geometry(geom):
+    """Exterior rings [[lon,lat],...] from an Esri (`rings`) or GeoJSON geometry."""
+    if not geom:
+        return []
+    if "rings" in geom:                      # Esri polygon
+        return [r for r in geom["rings"] if r]
+    t, coords = geom.get("type"), geom.get("coordinates")
+    if t == "Polygon" and coords:
+        return [coords[0]]
+    if t == "MultiPolygon" and coords:
+        return [poly[0] for poly in coords if poly]
+    return []
+
+
+def _point_in_ring(lon, lat, ring):
+    """Ray-casting point-in-polygon for one ring of [lon,lat] pairs."""
+    inside = False
+    n = len(ring)
+    j = n - 1
+    for i in range(n):
+        xi, yi = ring[i][0], ring[i][1]
+        xj, yj = ring[j][0], ring[j][1]
+        if ((yi > lat) != (yj > lat)) and \
+           (lon < (xj - xi) * (lat - yi) / ((yj - yi) or 1e-15) + xi):
+            inside = not inside
+        j = i
+    return inside
+
+
+def fetch_bazl_zones_bulk(bbox):
+    """Fetch every BAZL zone polygon intersecting `bbox`, tiled to dodge per-call
+    result limits. Returns (zones, ok). Each zone carries its exterior rings so
+    peaks can be tested locally -- a few dozen HTTP calls instead of thousands."""
+    s, w, n, e = bbox
+    tiles = 6
+    dlat, dlon = (n - s) / tiles, (e - w) / tiles
+    zones, calls, ok_calls = {}, 0, 0
+    for i in range(tiles):
+        for j in range(tiles):
+            ts, tn = s + i * dlat, s + (i + 1) * dlat
+            tw, te = w + j * dlon, w + (j + 1) * dlon
+            params = {
+                "geometryType": "esriGeometryEnvelope",
+                "geometry": f"{tw},{ts},{te},{tn}",
+                "sr": 4326,
+                "layers": f"all:{BAZL_LAYER}",
+                "tolerance": 0,
+                "mapExtent": f"{tw},{ts},{te},{tn}",
+                "imageDisplay": "500,500,96",
+                "returnGeometry": "true",
+                "geometryFormat": "geojson",
+                "lang": "en",
+            }
+            url = GEOADMIN_IDENTIFY + "?" + urllib.parse.urlencode(params)
+            calls += 1
+            try:
+                res = http_json(url, label="bazl-bulk", retries=3)
+                ok_calls += 1
+            except Exception as ex:  # noqa: BLE401
+                sys.stderr.write(f"  BAZL bulk tile ({i},{j}) failed: {ex}\n")
+                continue
+            for feat in res.get("results", []):
+                attrs = feat.get("attributes") or feat.get("properties") or {}
+                rings = _rings_from_geometry(feat.get("geometry") or {})
+                if not rings:
+                    continue
+                fid = feat.get("featureId") or feat.get("id") or attrs.get("id")
+                label, rtype = _label_and_type(attrs)
+                key = fid if fid is not None else json.dumps(attrs, sort_keys=True)
+                if key not in zones:
+                    zones[key] = {"name": label, "type": rtype,
+                                  "raw": attrs, "rings": rings}
+    ok = ok_calls > 0
+    print(f"  BAZL bulk fetch: {ok_calls}/{calls} tiles ok, {len(zones)} zones")
+    return list(zones.values()), ok
+
+
+def assign_bazl_local(peak, zones, fetched):
+    """Point-in-polygon of the peak (plus buffer ring) against pre-fetched zones."""
+    pts = [(peak["lat"], peak["lon"])] + ring_points(
+        peak["lat"], peak["lon"], BAZL_RING_RADIUS_M, BAZL_RING_POINTS)
+    found = {}
+    for (plat, plon) in pts:
+        for z in zones:
+            if id(z) in found:
+                continue
+            if any(_point_in_ring(plon, plat, ring) for ring in z["rings"]):
+                found[id(z)] = z
+    zone_list = [{"name": z["name"], "type": z["type"], "raw": z["raw"]}
+                 for z in found.values()]
+    peak["bazl"] = {
+        "status": "restricted" if zone_list else "clear",
+        "zones": zone_list,
+        "fetched_utc": fetched,
+        "queried_points": len(pts),
+        "errors": 0,
+        "method": "bulk-polygon (local point-in-polygon)",
+    }
+    if any(z["type"] == "see_source" for z in zone_list):
+        note_issue(peak["name"], "bazl-unclassified",
+                   "a BAZL zone applies but its ban/authorization type could not "
+                   "be classified from the attributes; verify on geo.admin.ch.")
+
+
+# ---- Fallback path: per-point identify (used only if the bulk fetch fails) ---
+
+def identify_bazl_point(lat, lon):
     """One identify call at a point. Returns list of raw feature attribute dicts."""
     s, w, n, e = BBOX
     params = {
@@ -389,33 +538,23 @@ def identify_bazl(lat, lon):
     }
     url = GEOADMIN_IDENTIFY + "?" + urllib.parse.urlencode(params)
     res = http_json(url, label="bazl-identify")
-    out = []
-    for feat in res.get("results", []):
-        out.append(feat.get("attributes", {}) or feat.get("properties", {}) or {})
-    return out
+    return [feat.get("attributes", {}) or feat.get("properties", {}) or {}
+            for feat in res.get("results", [])]
 
 
-def fetch_bazl_for_peak(peak):
+def fetch_bazl_for_peak(peak, fetched):
     """Query the BAZL layer at the peak plus a buffer ring; aggregate zones."""
-    fetched = datetime.now(timezone.utc).isoformat(timespec="seconds")
     sample_points = [(peak["lat"], peak["lon"])] + ring_points(
         peak["lat"], peak["lon"], BAZL_RING_RADIUS_M, BAZL_RING_POINTS)
     zones = {}
     errors = 0
     for (plat, plon) in sample_points:
         try:
-            for attrs in identify_bazl(plat, plon):
-                # Build a human label + stable key from whatever fields exist.
-                label = (attrs.get("name") or attrs.get("label")
-                         or attrs.get("bezeichnung") or attrs.get("description")
-                         or attrs.get("beschreibung") or "")
-                key = attrs.get("id") or attrs.get("featureId") or label or json.dumps(attrs, sort_keys=True)
-                blob = " ".join(str(v) for v in attrs.values())
-                zones[key] = {
-                    "name": label or "(unnamed BAZL zone)",
-                    "type": classify_restriction(blob),
-                    "raw": attrs,
-                }
+            for attrs in identify_bazl_point(plat, plon):
+                label, rtype = _label_and_type(attrs)
+                key = (attrs.get("id") or attrs.get("featureId")
+                       or json.dumps(attrs, sort_keys=True))
+                zones[key] = {"name": label, "type": rtype, "raw": attrs}
         except Exception as e:  # noqa: BLE401
             errors += 1
             sys.stderr.write(f"  BAZL identify failed near {peak['name']} "
@@ -423,23 +562,21 @@ def fetch_bazl_for_peak(peak):
 
     if errors and not zones:
         peak["bazl"] = {"status": "error", "zones": [], "fetched_utc": fetched,
-                        "queried_points": len(sample_points), "errors": errors}
+                        "queried_points": len(sample_points), "errors": errors,
+                        "method": "per-point identify"}
         note_issue(peak["name"], "bazl-error",
                    f"all {errors} BAZL identify calls failed; airspace status "
                    "could not be determined (shown as error, not clear).")
         return
 
     zone_list = list(zones.values())
-    if zone_list:
-        status = "restricted"
-    else:
-        status = "clear"  # no zone returned = no restriction IN THIS LAYER only
     peak["bazl"] = {
-        "status": status,
+        "status": "restricted" if zone_list else "clear",
         "zones": zone_list,
         "fetched_utc": fetched,
         "queried_points": len(sample_points),
         "errors": errors,
+        "method": "per-point identify",
     }
     if any(z["type"] == "see_source" for z in zone_list):
         note_issue(peak["name"], "bazl-unclassified",
@@ -518,12 +655,25 @@ def main():
     lifts = fetch_lifts()
     match_lifts(peaks, lifts)
 
-    print(f"STEP 2: BAZL airspace identify for {len(peaks)} peaks "
+    fetched = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    print(f"STEP 2: BAZL airspace for {len(peaks)} peaks "
           f"(point + {BAZL_RING_POINTS}-point ring) ...")
-    for i, p in enumerate(peaks, 1):
-        print(f"  [{i}/{len(peaks)}] {p['name']}")
-        fetch_bazl_for_peak(p)
-        p["geoadmin_url"] = geoadmin_url(p["lat"], p["lon"])
+    print("  fetching BAZL zone polygons once for the whole scope ...")
+    zones, ok = fetch_bazl_zones_bulk(BBOX)
+    if ok:
+        print(f"  testing each peak against {len(zones)} zones locally ...")
+        for p in peaks:
+            assign_bazl_local(p, zones, fetched)
+            p["geoadmin_url"] = geoadmin_url(p["lat"], p["lon"])
+        bazl_method = "bulk-polygon"
+    else:
+        print("  bulk fetch failed; falling back to per-point identify "
+              "(slower) ...")
+        for i, p in enumerate(peaks, 1):
+            print(f"  [{i}/{len(peaks)}] {p['name']}")
+            fetch_bazl_for_peak(p, fetched)
+            p["geoadmin_url"] = geoadmin_url(p["lat"], p["lon"])
+        bazl_method = "per-point identify (fallback)"
 
     apply_local_restrictions(peaks, load_local_restrictions())
 
@@ -533,6 +683,9 @@ def main():
         "_meta": {
             "generated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "bbox_south_west_north_east": list(BBOX),
+            "scope": ("Canton of Ticino (administrative boundary)"
+                      if SCOPE == "canton" else "Bellinzona-Locarno bbox"),
+            "bazl_method": bazl_method,
             "status": "OK",
             "sources": {
                 "peaks_and_lifts": "OpenStreetMap Overpass API (natural=peak, aerialway=cable_car|gondola|chair_lift)",

@@ -6,7 +6,7 @@
 (function () {
   "use strict";
 
-  var BBOX = [46.05, 8.65, 46.30, 9.05]; // S,W,N,E fallback
+  var BBOX = [45.80, 8.35, 46.65, 9.20]; // S,W,N,E fallback (Canton Ticino)
 
   var map = L.map("map", { zoomControl: true });
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
