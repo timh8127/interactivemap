@@ -1,6 +1,6 @@
 # Data issues — spot-check before trusting the map
 
-_Generated 2026-07-18T17:40:07+00:00 from live sources._
+_Generated 2026-07-18T19:43:06+00:00 from live sources._
 
 Every record below was **ambiguous or unconfirmed** during the fetch. Nothing here is presented as flight-cleared. Verify each against [DABS](https://www.skybriefing.com/de/dabs) and the local operator before flying.
 
@@ -140,14 +140,17 @@ Every record below was **ambiguous or unconfirmed** during the fetch. Nothing he
 - **Pt. 2583** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
 - **Chironico Boulder Area 21 Blocco 2** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
 
-## Local / operator policy UNKNOWN (default) (640)
+## Gondola matches left UNCONFIRMED (1)
+
+- **Monte Bre** — lift Funicolare Monte Brè (way/619868053): terminal within 333m horizontally but elevation difference 136m exceeds 100.0m. Marked unconfirmed rather than guessed.
+
+## Local / operator policy UNKNOWN (default) (639)
 
 - **Basòdino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Madone Grosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Limidario** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte San Giorgio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte San Salvatore** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Tamaro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Zucchero** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo del Sole** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Rosso di Ribia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.

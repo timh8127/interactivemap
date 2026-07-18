@@ -14,45 +14,87 @@
     "Only use a 'confirmed_*' status when source_url points at a page whose text",
     "actually states the policy. Default to 'unknown' on silence -- never 'allowed'.",
     "",
-    "The seed entries below are all 'unknown' on purpose: operator drone policies",
-    "could not be verified from retrievable page text in the build environment.",
-    "Each carries the operator's official URL so a human can confirm and upgrade."
+    "IMPORTANT: fetch_data.py's join falls back to name-matching even when",
+    "match.osm_id is also set on the entry (by_name is keyed from every entry",
+    "that has a name, regardless of whether osm_id matched something first).",
+    "'Cimetta' exists TWICE in the canton-wide peaks dataset -- the lift-served",
+    "one near Locarno (osm_id 554847668, ele 1671m) and an unrelated wilderness",
+    "peak elsewhere in Ticino (osm_id 11990914646, ele 2031m). The entry below",
+    "therefore omits match.name (null) and matches by osm_id only, so the",
+    "operator policy is never misapplied to the wilderness peak. Re-check for",
+    "new name collisions if the canton-wide peak set changes.",
+    "",
+    "2026-07-18 research pass: all lift/tourism-served summits below were",
+    "checked against their operator's own site (FAQ, regolamento, terms/",
+    "conditions, park rules where applicable) plus web searches for",
+    "'<peak> drone / droni / Drohnen'. Only Monte Tamaro turned up an explicit",
+    "operator drone ban, on a 'sustainability' page that the first pass missed",
+    "(a user pointed to the URL directly; see that entry's note). A follow-up",
+    "check of the other operators' 'sustainability'/'sostenibilita' pages found",
+    "no equivalent clause elsewhere -- Monte Generoso has such a page but it",
+    "doesn't mention drones, Monte Lema's links to an 'aeromodellismo' (RC",
+    "model-aircraft) page that also doesn't mention drones, and the rest 404.",
+    "Every other entry stays 'unknown' per the hard rule (silence != allowed).",
+    "See each note for exactly what was checked, so a future re-check knows",
+    "what's already been ruled out."
   ],
   "entries": [
     {
       "match": { "name": "Monte Tamaro", "osm_id": null },
-      "status": "unknown",
-      "source_url": "https://www.montetamaro.ch/en/faq/",
-      "checked_date": null,
-      "note": "Frequently reported as an operator drone ban (site/adventure-park area). NOT yet confirmed against a citable page in this build. Verify the FAQ / park rules on montetamaro.ch and, if the ban text is found, set status 'confirmed_banned' with checked_date."
+      "status": "confirmed_banned",
+      "source_url": "https://www.montetamaro.ch/en/sustainability",
+      "checked_date": "2026-07-18",
+      "note": "Operator page states: \"In all these areas, throughout the year, dogs must be kept on a leash and the use of drones or unmanned aircraft is prohibited.\" This applies to three named 'sensitive zones' on the mountain (La Manèra, La Còsta da Mügía, In Cüsell) protecting wildlife; the page does not give exact boundaries or state whether the zones include the summit/cable-car/adventure-park area itself, so treat the ban as applying to the mountain generally rather than confirmed for one precise footprint. In Cüsell additionally has a separate seasonal overflight ban (1 Dec-31 Jul) layered on top of the year-round drone/dog rule. (Missed in the first research pass, which only checked the now-404 FAQ, general T&Cs, and Adventure Park regulations PDF -- none of which covered this page. Found after a user pointed to the URL directly.)"
     },
     {
       "match": { "name": "Monte Lema", "osm_id": null },
       "status": "unknown",
       "source_url": "https://lemamountain.ch/en/",
-      "checked_date": null,
-      "note": "Cable-car operator (Monte Lema SA). No drone policy text confirmed. Verify on the operator site before flying."
+      "checked_date": "2026-07-18",
+      "note": "Checked the EN/IT homepages and the paragliding/trekking pages on lemamountain.ch; no FAQ, regolamento, or terms-of-use page exists on the site and none of the checked pages mention drones. Web search in EN/IT/DE found no operator or official statement."
     },
     {
-      "match": { "name": "Cimetta", "osm_id": null },
+      "match": { "name": null, "osm_id": 554847668 },
       "status": "unknown",
-      "source_url": "https://www.cardada.ch/en/",
-      "checked_date": null,
-      "note": "Cardada-Cimetta cable-car/chairlift operator. No drone policy text confirmed. Verify on cardada.ch."
+      "source_url": "https://www.cardada.ch/en/cardada-cimetta",
+      "checked_date": "2026-07-18",
+      "note": "Cardada-Cimetta chairlift/cable-car operator (cardada.ch). Checked EN/IT homepages, terms and conditions, and the mountain-bike regulations page; no drone/UAV mention anywhere, and no belvedere-specific rules page exists. Web search (incl. Locarno airport's general 5km drone-radius guidance) found no operator-published statement naming Cardada or Cimetta specifically -- do not infer a ban from the airport proximity alone. NOTE: matched by osm_id only (554847668, ele 1671m) -- see _readme, this name also exists on an unrelated wilderness peak elsewhere in the canton."
     },
     {
       "match": { "name": "Cardada", "osm_id": null },
       "status": "unknown",
       "source_url": "https://www.cardada.ch/en/",
-      "checked_date": null,
-      "note": "Cardada-Cimetta operator area. No drone policy text confirmed. Verify on cardada.ch."
+      "checked_date": "2026-07-18",
+      "note": "Cardada-Cimetta chairlift/cable-car operator (cardada.ch). Checked EN/IT homepages, terms and conditions, and the mountain-bike regulations page; no drone/UAV mention anywhere, and no belvedere-specific rules page exists. Web search found no operator-published statement."
+    },
+    {
+      "match": { "name": "Monte Generoso", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://www.montegeneroso.ch/en/faq",
+      "checked_date": "2026-07-18",
+      "note": "Checked EN/IT homepage, EN/IT FAQ, and general terms & conditions on montegeneroso.ch -- no drone/UAV/aircraft mention. The only drone text found on the domain is a one-off event regulation for a single ticketed concert (16.08.2025, 'Regolamento RESONICA x MONTE GENEROSO' PDF) listing 'Droni o dispositivi di ripresa non autorizzati' among prohibited items for that event -- a crowd-safety list, not a general site policy, so this does NOT justify confirmed_banned. Web search found no year-round operator statement."
+    },
+    {
+      "match": { "name": "Monte San Salvatore", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://www.montesansalvatore.ch/en/",
+      "checked_date": "2026-07-18",
+      "note": "Checked the operator's homepage plus /en/mount-san-salvatore/, /en/activities/, /en/timetable-and-fares/, /en/contacts/ (Italian /it/ path 404s). No 'drone', 'UAV', or aerial-photography rule anywhere, no FAQ/regolamento page exists. Do not infer a ban from proximity to Lugano airport (LSZA) or the broadcast tower -- that is federal/BAZL airspace territory, a separate legal basis (see _readme), not operator policy."
+    },
+    {
+      "match": { "name": "Monte Bre", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://www.montebre.ch/en/",
+      "checked_date": "2026-07-18",
+      "note": "Checked EN/IT homepages, site navigation, and the PDF 'Regolamento per il trasporto di animali, bagagli e biciclette' on montebre.ch -- none mention drones. Web search in EN/IT/DE found no operator or official statement. (OSM stores this peak's name without the accent, 'Monte Bre'; match.name mirrors that exactly.)"
     },
     {
       "match": { "name": "Monte Gambarogno", "osm_id": null },
       "status": "unknown",
-      "source_url": "https://www.gambarogno-turismo.ch/en/",
-      "checked_date": null,
-      "note": "Gambarogno / Alpe di Neggia area. Note the nearby Bolle di Magadino federal wetland reserve has its own protection regime (lake level, separate from summits). No summit drone policy text confirmed."
+      "source_url": "https://www.ascona-locarno.com/esplora/gambarogno",
+      "checked_date": "2026-07-18",
+      "note": "gambarogno-turismo.ch no longer resolves as a standalone site; gambarognoturismo.ch now redirects to ascona-locarno.com/esplora/gambarogno (Gambarogno tourism was absorbed into Ascona-Locarno Turismo). Checked that page and its Visitor Info / Downloads / hiking-trail links; no FAQ/rules page and no drone/UAV mention. Web search turned up only unrelated hits (wildfire firefighting drone use, an Indemini drone-obstruction incident, a local model-aircraft club) -- none are operator policy. The nearby Bolle di Magadino federal wetland reserve has its own drone-overflight restriction under general Swiss nature-reserve rules, but that is a DIFFERENT area at lake level, not the Monte Gambarogno summit/hiking zone -- do not apply it here."
     }
-  ]
+  ],
+  "_ritom_note": "Ritom funicular (ritom.ch) was researched per the task brief but is deliberately NOT given an entry here: its upper terminal serves the Piora plateau / Lago Ritom basin, not a distinct named summit, so it has no corresponding entry in data/peaks.json to join against. Checked ritom.ch home, funicular, Piora-region, nature, and lake pages plus EN/IT/DE web search -- no explicit drone statement found either way. The Cadagno di Fuori peat bog nearby is closed to public access under the federal peat-bog inventory, but that is a general access rule, not a drone-specific one, and no separate drone regulation for the Piora/Cadagno reserve was located."
 }
