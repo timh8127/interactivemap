@@ -8,12 +8,32 @@
 
   var BBOX = [45.80, 8.35, 46.65, 9.20]; // S,W,N,E fallback (Canton Ticino)
 
-  var map = L.map("map", { zoomControl: true });
+  var map = L.map("map", {
+    zoomControl: true,
+    zoomSnap: 1,          // land on whole zoom levels
+    zoomDelta: 1,         // +/- buttons and keyboard move one level
+    scrollWheelZoom: false // replaced below with a one-notch-per-level handler
+  });
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
   map.fitBounds([[BBOX[0], BBOX[1]], [BBOX[2], BBOX[3]]]);
+
+  // Discrete wheel zoom: exactly one level per notch, centered on the cursor.
+  // Leaflet's built-in scroll zoom accumulates raw wheel deltas, so a
+  // high-resolution mouse/trackpad can jump many levels in a single notch.
+  (function () {
+    var lock = false;
+    map.getContainer().addEventListener("wheel", function (e) {
+      e.preventDefault();
+      if (lock) return;
+      lock = true;
+      setTimeout(function () { lock = false; }, 100);
+      var dir = e.deltaY < 0 ? 1 : -1;
+      map.setZoomAround(map.mouseEventToContainerPoint(e), map.getZoom() + dir);
+    }, { passive: false });
+  })();
 
   // ---- colour mappings (kept per-signal, never combined) ----
   var GONDOLA = {
@@ -161,6 +181,8 @@
     var open = lg.classList.toggle("hidden");
     this.setAttribute("aria-expanded", String(!open));
   });
+
+  window.__ticinoMap = map; // exposed for debugging / tests
 
   fetch("data/peaks.json", { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
