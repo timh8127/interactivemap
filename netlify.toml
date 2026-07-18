@@ -1,0 +1,11 @@
+# Static site — no build step. Publish the repo root as-is.
+# After `netlify init` links this repo to a site, every push to the
+# production branch auto-triggers a deploy with no further manual steps.
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/data/*.json"
+  [headers.values]
+    Cache-Control = "no-cache"

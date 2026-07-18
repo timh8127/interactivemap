@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bellinzona–Locarno Peaks — Drone Planning Aid</title>
+  <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header id="topbar">
+    <div class="title">
+      <strong>Bellinzona–Locarno Peaks</strong>
+      <span class="sub">drone-flight planning aid · Ticino, CH</span>
+    </div>
+    <button id="legendToggle" type="button" aria-expanded="true">Legend</button>
+  </header>
+
+  <div id="notFetched" class="banner hidden">
+    <strong>No live data loaded.</strong>
+    <span id="notFetchedMsg"></span>
+  </div>
+
+  <div id="disclaimer" class="banner warn">
+    Planning aid only — <strong>not</strong> a flight clearance. This map shows the
+    federal <code>ch.bazl.einschraenkungen-drohnen</code> airspace layer, which does
+    <strong>not</strong> include BAZL’s daily <a href="https://dabs.bazl.admin.ch/"
+    target="_blank" rel="noopener">DABS</a> / NOTAM restrictions. Always check DABS
+    and the local operator before any flight.
+  </div>
+
+  <div id="map"></div>
+
+  <aside id="legend">
+    <h2>Three independent signals</h2>
+    <p class="lede">Each peak carries three separate badges. They are never combined —
+      a peak can be <em>airspace-clear</em> yet still <em>operator-banned</em>.</p>
+
+    <section>
+      <h3><span class="tag tag-g">G</span> Gondola match</h3>
+      <ul>
+        <li><span class="dot c-green"></span> confirmed — lift terminal ≤400 m &amp; ≤100 m elev.</li>
+        <li><span class="dot c-amber"></span> unconfirmed — weak match, not verified</li>
+        <li><span class="dot c-grey"></span> none — no lift near this peak</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3><span class="tag tag-a">A</span> BAZL airspace</h3>
+      <ul>
+        <li><span class="dot c-red"></span> restricted — inside a BAZL drone zone</li>
+        <li><span class="dot c-green"></span> clear — no zone in <em>this layer</em></li>
+        <li><span class="dot c-grey"></span> error — lookup failed / unknown</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3><span class="tag tag-l">L</span> Local / operator</h3>
+      <ul>
+        <li><span class="dot c-red"></span> confirmed banned (site/cantonal)</li>
+        <li><span class="dot c-green"></span> confirmed allowed</li>
+        <li><span class="dot c-grey"></span> unknown — default, verify yourself</li>
+      </ul>
+    </section>
+
+    <p class="meta" id="metaBox"></p>
+  </aside>
+
+  <script src="assets/leaflet/leaflet.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

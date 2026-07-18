@@ -1,0 +1,67 @@
+# Bellinzona–Locarno Peaks — drone-flight planning aid
+
+Interactive Leaflet map of mountain peaks in the Bellinzona–Locarno area of
+Ticino, Switzerland (bbox ≈ `46.05,8.65` → `46.30,9.05`, covering Gambarogno,
+Monte Tamaro/Lema, Cardada-Cimetta, Val Verzasca, Val Bavona/Robiei).
+
+**This is a planning aid, not a flight clearance.** Every peak shows three
+*independent* signals that are deliberately never merged into one verdict:
+
+| Badge | Signal | Source |
+|-------|--------|--------|
+| **G** | Gondola/lift match confidence | OpenStreetMap (Overpass) |
+| **A** | BAZL federal drone-airspace status | `api3.geo.admin.ch` layer `ch.bazl.einschraenkungen-drohnen` |
+| **L** | Local / cable-car-operator / cantonal status | manual research (`data/local_restrictions.json`) |
+
+A peak can be **airspace-clear (A)** and still **operator-banned (L)** — the two
+are different legal bases. Always verify against
+[DABS](https://dabs.bazl.admin.ch/) (daily/NOTAM restrictions, **not** in the
+static layer) and the operator directly before flying.
+
+## How the data is produced
+
+Nothing is hardcoded from memory. All peak/lift/airspace data is derived live by
+`fetch_data.py`:
+
+1. **Peaks + lifts** — Overpass API: `natural=peak` nodes (with `ele`+`name`) and
+   `aerialway=cable_car|gondola|chair_lift` ways/relations in the bbox.
+2. **Lift → peak matching** — each lift's upper terminal is matched to the nearest
+   peak within **400 m horizontal AND 100 m elevation** (terminal elevation from
+   the swisstopo height API). Weaker matches are marked **unconfirmed** — never a
+   guessed yes.
+3. **BAZL airspace** — `identify` (`geometryType=esriGeometryPoint`) at each peak
+   **plus an 8-point ~350 m buffer ring**, so a bare point can't miss a zone edge.
+   Records zone name, ban-vs-authorization type, and fetch timestamp.
+4. **Local restrictions** — manual, from `data/local_restrictions.json`; defaults
+   to `unknown` on silence, never `allowed`.
+
+Outputs: `data/peaks.json` (consumed by the map) and `data-issues.md` (everything
+ambiguous/unconfirmed, for spot-checking).
+
+### Run the fetch (needs internet access)
+
+```bash
+python3 fetch_data.py     # stdlib only, no pip installs
+```
+
+The site ships with `data/peaks.json` in `status: "NOT_FETCHED"` and shows no
+markers until you run this — so nothing fabricated is ever displayed.
+
+> Note: this repository was built in a sandbox whose network policy blocked
+> `overpass-api.de` and `api3.geo.admin.ch`, so the live fetch has **not** been
+> run here. Run it in an environment with outbound internet to populate the map.
+
+## Local preview
+
+```bash
+python3 -m http.server 8000    # then open http://localhost:8000
+```
+
+The map (Leaflet, vendored under `assets/leaflet/`, no CDN dependency) loads
+OpenStreetMap tiles client-side — no API key required.
+
+## Deploy (Netlify)
+
+`netlify.toml` sets `publish = "."` with no build command. After a one-time
+`netlify init` (which needs a manual browser OAuth step for first-time site
+creation), every push to the production branch auto-deploys.

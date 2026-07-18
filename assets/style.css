@@ -1,0 +1,115 @@
+:root {
+  --green: #2e9e4f;
+  --amber: #e0a419;
+  --red:   #d63b3b;
+  --grey:  #9aa0a6;
+  --ink:   #1c2126;
+  --panel: #ffffff;
+  --bg:    #eef1f4;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font: 14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+#topbar {
+  height: 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 14px;
+  background: #12303f; color: #fff;
+}
+#topbar .title strong { font-size: 15px; }
+#topbar .sub { opacity: .8; margin-left: 8px; font-size: 12px; }
+#legendToggle {
+  background: #1d4a61; color: #fff; border: 0; border-radius: 6px;
+  padding: 6px 12px; cursor: pointer;
+}
+#legendToggle:hover { background: #266182; }
+
+.banner {
+  padding: 8px 14px; font-size: 13px;
+  border-bottom: 1px solid #d9dee3; background: #fff;
+}
+.banner.warn { background: #fff7e6; color: #6b4e00; }
+.banner a { color: inherit; }
+.banner.hidden { display: none; }
+#notFetched { background: #fdecec; color: #7a1f1f; }
+
+#map { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; }
+/* map fills below the stacked banners via JS-set top padding wrapper */
+body { display: flex; flex-direction: column; }
+#map { position: relative; flex: 1 1 auto; min-height: 300px; }
+
+#legend {
+  position: absolute; right: 12px; top: 120px; width: 270px; z-index: 1000;
+  background: var(--panel); border: 1px solid #d9dee3; border-radius: 10px;
+  padding: 12px 14px; box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  max-height: 72vh; overflow: auto;
+}
+#legend.hidden { display: none; }
+#legend h2 { font-size: 14px; margin: 0 0 4px; }
+#legend .lede { font-size: 12px; color: #55606a; margin: 0 0 10px; }
+#legend section { border-top: 1px solid #eceff2; padding-top: 8px; margin-top: 8px; }
+#legend h3 { font-size: 13px; margin: 0 0 6px; display: flex; align-items: center; gap: 6px; }
+#legend ul { list-style: none; margin: 0; padding: 0; }
+#legend li { display: flex; align-items: center; gap: 8px; font-size: 12px; margin: 3px 0; }
+#legend .meta { font-size: 11px; color: #6b747c; border-top: 1px solid #eceff2; padding-top: 8px; }
+
+.dot { width: 12px; height: 12px; border-radius: 50%; flex: 0 0 auto; display: inline-block; }
+.c-green { background: var(--green); }
+.c-amber { background: var(--amber); }
+.c-red   { background: var(--red); }
+.c-grey  { background: var(--grey); }
+
+.tag {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px; border-radius: 4px; color: #fff;
+  font-size: 11px; font-weight: 700;
+}
+.tag-g { background: #2f6f8f; }
+.tag-a { background: #7a4fb0; }
+.tag-l { background: #b06a2f; }
+
+/* Composite marker: three stacked badge pills */
+.peak-marker {
+  display: flex; gap: 2px; padding: 2px 3px;
+  background: #fff; border: 1px solid #b7c0c8; border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  transform: translate(-50%, -120%);
+  width: max-content;
+}
+.peak-marker .pill {
+  width: 15px; height: 15px; border-radius: 3px;
+  color: #fff; font-size: 10px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.pill.p-green { background: var(--green); }
+.pill.p-amber { background: var(--amber); }
+.pill.p-red   { background: var(--red); }
+.pill.p-grey  { background: var(--grey); }
+
+/* Popup */
+.popup h3 { margin: 0 0 2px; font-size: 15px; }
+.popup .ele { color: #55606a; font-size: 12px; margin: 0 0 8px; }
+.popup .row { border-top: 1px solid #eceff2; padding: 6px 0; }
+.popup .row:first-of-type { border-top: 0; }
+.popup .label { font-weight: 700; display: flex; align-items: center; gap: 6px; }
+.popup .badge { font-size: 11px; padding: 1px 7px; border-radius: 10px; color: #fff; }
+.b-green { background: var(--green); } .b-amber { background: var(--amber); }
+.b-red { background: var(--red); } .b-grey { background: var(--grey); }
+.popup .detail { font-size: 12px; color: #444; margin-top: 3px; }
+.popup a { color: #12303f; }
+.popup .zones { font-size: 12px; margin: 4px 0 0; padding-left: 16px; }
+.popup .verify {
+  display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 600;
+  background: #12303f; color: #fff; padding: 5px 10px; border-radius: 6px; text-decoration: none;
+}
+.leaflet-popup-content { width: 300px !important; }
+
+@media (max-width: 640px) {
+  #legend { position: static; width: auto; max-height: none; margin: 8px; }
+}

@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "generated_utc": null,
+    "bbox_south_west_north_east": [46.05, 8.65, 46.30, 9.05],
+    "status": "NOT_FETCHED",
+    "note": "Placeholder. No live data has been fetched yet. Run `python3 fetch_data.py` in an environment with outbound internet access (Overpass API + api3.geo.admin.ch reachable) to populate this file with real peaks, lifts, and BAZL airspace results. The map intentionally shows no peak markers until then, so nothing fabricated is ever displayed.",
+    "disclaimer": "Planning aid only. The BAZL layer does NOT include DABS daily/NOTAM restrictions. Verify against DABS and the local operator before any flight."
+  },
+  "peaks": []
+}

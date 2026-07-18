@@ -1,0 +1,58 @@
+{
+  "_readme": [
+    "STEP 2.5 -- MANUAL data. This is a DIFFERENT legal basis than the federal",
+    "BAZL airspace layer (Step 2): here we record site / cable-car-operator",
+    "policy or cantonal nature-reserve bylaws. A peak can be airspace-clear in",
+    "BAZL and still operator-banned here. The two are never merged.",
+    "",
+    "How the pipeline joins these: fetch_data.py matches each entry to a peak by",
+    "match.osm_id (preferred) or by match.name (case-insensitive, exact). Peaks",
+    "with no entry default to status 'unknown'. After the first real fetch, look",
+    "at data/peaks.json for the true OSM names/ids and pin match.osm_id here.",
+    "",
+    "status MUST be one of: 'unknown' | 'confirmed_banned' | 'confirmed_allowed'.",
+    "Only use a 'confirmed_*' status when source_url points at a page whose text",
+    "actually states the policy. Default to 'unknown' on silence -- never 'allowed'.",
+    "",
+    "The seed entries below are all 'unknown' on purpose: operator drone policies",
+    "could not be verified from retrievable page text in the build environment.",
+    "Each carries the operator's official URL so a human can confirm and upgrade."
+  ],
+  "entries": [
+    {
+      "match": { "name": "Monte Tamaro", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://www.montetamaro.ch/en/faq/",
+      "checked_date": null,
+      "note": "Frequently reported as an operator drone ban (site/adventure-park area). NOT yet confirmed against a citable page in this build. Verify the FAQ / park rules on montetamaro.ch and, if the ban text is found, set status 'confirmed_banned' with checked_date."
+    },
+    {
+      "match": { "name": "Monte Lema", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://lemamountain.ch/en/",
+      "checked_date": null,
+      "note": "Cable-car operator (Monte Lema SA). No drone policy text confirmed. Verify on the operator site before flying."
+    },
+    {
+      "match": { "name": "Cimetta", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://www.cardada.ch/en/",
+      "checked_date": null,
+      "note": "Cardada-Cimetta cable-car/chairlift operator. No drone policy text confirmed. Verify on cardada.ch."
+    },
+    {
+      "match": { "name": "Cardada", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://www.cardada.ch/en/",
+      "checked_date": null,
+      "note": "Cardada-Cimetta operator area. No drone policy text confirmed. Verify on cardada.ch."
+    },
+    {
+      "match": { "name": "Monte Gambarogno", "osm_id": null },
+      "status": "unknown",
+      "source_url": "https://www.gambarogno-turismo.ch/en/",
+      "checked_date": null,
+      "note": "Gambarogno / Alpe di Neggia area. Note the nearby Bolle di Magadino federal wetland reserve has its own protection regime (lake level, separate from summits). No summit drone policy text confirmed."
+    }
+  ]
+}
