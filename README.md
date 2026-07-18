@@ -20,7 +20,7 @@ summits are excluded.
 
 A peak can be **airspace-clear (A)** and still **operator-banned (L)** — the two
 are different legal bases. Always verify against
-[DABS](https://dabs.bazl.admin.ch/) (daily/NOTAM restrictions, **not** in the
+[DABS](https://www.skybriefing.com/de/dabs) (daily/NOTAM restrictions, **not** in the
 static layer) and the operator directly before flying.
 
 ## How the data is produced

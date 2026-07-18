@@ -236,7 +236,7 @@
           ("https://map.geo.admin.ch/?lang=en&layers=ch.bazl.einschraenkungen-drohnen&swisssearch=" +
            p.lat + "," + p.lon)) +
           '" target="_blank" rel="noopener">Verify on geo.admin.ch →</a>' +
-        ' <a class="verify" style="background:#6b4e00" href="https://dabs.bazl.admin.ch/"' +
+        ' <a class="verify" style="background:#6b4e00" href="https://www.skybriefing.com/de/dabs"' +
           ' target="_blank" rel="noopener">Check DABS →</a>' +
         (adminMode ? editForm(p) : "") +
       "</div>";

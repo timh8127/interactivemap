@@ -2,7 +2,7 @@
 
 _Generated 2026-07-18T17:40:07+00:00 from live sources._
 
-Every record below was **ambiguous or unconfirmed** during the fetch. Nothing here is presented as flight-cleared. Verify each against [DABS](https://dabs.bazl.admin.ch/) and the local operator before flying.
+Every record below was **ambiguous or unconfirmed** during the fetch. Nothing here is presented as flight-cleared. Verify each against [DABS](https://www.skybriefing.com/de/dabs) and the local operator before flying.
 
 
 ## Peaks skipped (no name tag) (107)

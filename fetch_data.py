@@ -727,7 +727,7 @@ def write_issues(meta):
     lines.append(f"_Generated {meta['generated_utc']} from live sources._\n")
     lines.append("Every record below was **ambiguous or unconfirmed** during the "
                  "fetch. Nothing here is presented as flight-cleared. Verify each "
-                 "against [DABS](https://dabs.bazl.admin.ch/) and the local "
+                 "against [DABS](https://www.skybriefing.com/de/dabs) and the local "
                  "operator before flying.\n")
     if not ISSUES:
         lines.append("\n_No issues recorded in this run — but still verify "
