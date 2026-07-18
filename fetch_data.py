@@ -92,22 +92,35 @@ def _http(url, data=None, headers=None):
         return resp.read().decode("utf-8", errors="replace")
 
 
-def http_json(url, data=None, headers=None, label="request"):
-    """HTTP with retry + exponential backoff. Returns parsed JSON or raises."""
+def http_json(url, data=None, headers=None, label="request", retries=HTTP_RETRIES):
+    """HTTP with retry + exponential backoff. Returns parsed JSON or raises.
+
+    4xx client errors (except 429 rate-limit) are deterministic, so we fail
+    fast on them instead of wasting the backoff schedule -- retrying a bad
+    request just reproduces the same 400."""
     last_err = None
-    for attempt in range(HTTP_RETRIES):
+    for attempt in range(retries):
         try:
             body = _http(url, data=data, headers=headers)
             return json.loads(body)
-        except (urllib.error.URLError, urllib.error.HTTPError, ValueError) as e:
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if 400 <= e.code < 500 and e.code != 429:
+                raise RuntimeError(f"{label} failed: HTTP {e.code} {e.reason} "
+                                   "(client error, not retried)") from e
+            wait = 2 ** (attempt + 1)
+            sys.stderr.write(
+                f"  [{label}] attempt {attempt + 1}/{retries} failed: {e}; "
+                f"retrying in {wait}s\n")
+            time.sleep(wait)
+        except (urllib.error.URLError, ValueError) as e:
             last_err = e
             wait = 2 ** (attempt + 1)
             sys.stderr.write(
-                f"  [{label}] attempt {attempt + 1}/{HTTP_RETRIES} failed: {e}; "
-                f"retrying in {wait}s\n"
-            )
+                f"  [{label}] attempt {attempt + 1}/{retries} failed: {e}; "
+                f"retrying in {wait}s\n")
             time.sleep(wait)
-    raise RuntimeError(f"{label} failed after {HTTP_RETRIES} attempts: {last_err}")
+    raise RuntimeError(f"{label} failed after {retries} attempts: {last_err}")
 
 
 # --------------------------------------------------------------------------
@@ -239,17 +252,40 @@ def fetch_lifts():
 # STEP 1b -- terminal elevation via swisstopo height API
 # --------------------------------------------------------------------------
 
+def wgs84_to_lv95(lat, lon):
+    """swisstopo approximate transform WGS84 -> LV95 (EPSG:2056), ~1 m accuracy.
+    The height service only accepts Swiss projected coordinates, so we must
+    project lon/lat before querying it (passing raw WGS84 returns HTTP 400)."""
+    phi = (lat * 3600.0 - 169028.66) / 10000.0   # latitude in the auxiliary unit
+    lam = (lon * 3600.0 - 26782.5) / 10000.0     # longitude in the auxiliary unit
+    e = (2600072.37
+         + 211455.93 * lam
+         - 10938.51 * lam * phi
+         - 0.36 * lam * phi ** 2
+         - 44.54 * lam ** 3)
+    n = (1200147.07
+         + 308807.95 * phi
+         + 3745.25 * lam ** 2
+         + 76.63 * phi ** 2
+         - 194.56 * lam ** 2 * phi
+         + 119.79 * phi ** 3)
+    return e, n
+
+
 def terminal_elevation(lat, lon):
-    """Return elevation (m) at a point from the swisstopo height service, or None."""
+    """Return elevation (m) at a point from the swisstopo height service, or None.
+    Best-effort: on any failure we return None and the caller degrades the lift
+    match to 'unconfirmed' rather than guessing."""
+    e, n = wgs84_to_lv95(lat, lon)
     url = GEOADMIN_HEIGHT + "?" + urllib.parse.urlencode({
-        "easting": lon, "northing": lat, "sr": 4326,
+        "easting": round(e, 2), "northing": round(n, 2),
     })
     try:
-        res = http_json(url, label="height")
+        res = http_json(url, label="height", retries=2)
         h = res.get("height")
         return float(h) if h is not None else None
-    except Exception as e:  # noqa: BLE401
-        sys.stderr.write(f"  height lookup failed at {lat},{lon}: {e}\n")
+    except Exception as ex:  # noqa: BLE401
+        sys.stderr.write(f"  height lookup failed at {lat},{lon}: {ex}\n")
         return None
 
 
