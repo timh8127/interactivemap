@@ -1,134 +1,489 @@
 # Data issues — spot-check before trusting the map
 
-_Generated 2026-07-18T17:08:40+00:00 from live sources._
+_Generated 2026-07-18T17:40:07+00:00 from live sources._
 
 Every record below was **ambiguous or unconfirmed** during the fetch. Nothing here is presented as flight-cleared. Verify each against [DABS](https://dabs.bazl.admin.ch/) and the local operator before flying.
 
 
-## Peaks skipped (no name tag) (23)
+## Peaks skipped (no name tag) (107)
 
+- **osm/node/506610974** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.065317,9.0783019
+- **osm/node/690989533** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3358333,8.5154464
+- **osm/node/690989726** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3480064,8.6945425
+- **osm/node/691002979** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4011138,8.5761977
+- **osm/node/691014334** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.332168,8.5569683
+- **osm/node/1372730058** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3278755,9.0644429
+- **osm/node/1372951270** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2597307,8.5112794
+- **osm/node/1372951503** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2638082,8.4558539
 - **osm/node/1372952478** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2859439,8.9060485
+- **osm/node/1372953525** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3030636,8.9103623
+- **osm/node/1372954001** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3113843,8.901144
+- **osm/node/1372954068** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3137738,8.881582
+- **osm/node/1372954940** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3342975,8.9225228
+- **osm/node/1372956457** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3837377,8.8426452
+- **osm/node/1372956952** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3968973,8.7730312
+- **osm/node/1372957929** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4314993,8.4594086
+- **osm/node/1372957981** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4347607,8.4575327
+- **osm/node/1372958081** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4382232,8.7161312
+- **osm/node/1372958162** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4426576,8.708232
+- **osm/node/1372958235** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4455316,8.7062559
+- **osm/node/1372958661** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4602593,8.7467244
+- **osm/node/3202879831** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2616275,8.4940086
+- **osm/node/3264446984** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2224685,8.5219854
 - **osm/node/3913172561** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.1496387,9.0437471
-- **osm/node/3955275173** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.1127019,8.6576843
-- **osm/node/4438963874** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.0621553,8.8185965
-- **osm/node/4438964729** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.0559909,8.8286441
+- **osm/node/3913207792** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.1405217,9.0670179
+- **osm/node/4550506725** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5055413,8.8514813
 - **osm/node/4731042323** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.212722,8.9981723
 - **osm/node/5104611581** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2160998,8.8501954
+- **osm/node/5118106700** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3713916,8.7531423
+- **osm/node/5118106701** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3697334,8.7758445
+- **osm/node/5118106702** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3685785,8.7661457
+- **osm/node/5137544238** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4507045,8.461975
 - **osm/node/6835735099** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2239925,8.7993944
 - **osm/node/7088751159** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.0866093,8.9364328
+- **osm/node/7968536381** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4944211,8.4149089
+- **osm/node/7968575685** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4972712,8.4558272
+- **osm/node/7968575686** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.496967,8.4567111
+- **osm/node/7968575689** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5075107,8.4562813
+- **osm/node/7968575690** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4889052,8.4119785
+- **osm/node/7968575691** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4925598,8.4004095
+- **osm/node/8081283199** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2440244,8.5685121
 - **osm/node/8438495223** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.1571106,8.7576747
 - **osm/node/8509752867** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2434602,8.8898583
+- **osm/node/8509873115** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3275136,8.7508551
+- **osm/node/8509958221** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3265222,8.763995
+- **osm/node/8512062459** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3545762,8.8706566
+- **osm/node/8512062529** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3043987,8.8281841
+- **osm/node/8512062538** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.306187,8.8333984
+- **osm/node/8512062590** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3037217,8.9391635
+- **osm/node/8512062593** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3032874,8.9383684
+- **osm/node/8512062676** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3017765,8.9310552
 - **osm/node/8512062718** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2698177,8.8917496
+- **osm/node/8516372615** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3505268,8.687911
+- **osm/node/8516372892** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3843596,8.7029958
+- **osm/node/8516372900** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3940243,8.7154412
 - **osm/node/8932841207** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2987707,9.0413866
 - **osm/node/8969019024** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.1874247,8.7566098
 - **osm/node/8969019025** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.1874981,8.7563737
+- **osm/node/9348442428** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5605242,8.6968712
+- **osm/node/9348442430** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5624548,8.6899051
+- **osm/node/9348442431** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5766431,8.6668695
+- **osm/node/9348442436** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5514785,8.7456443
+- **osm/node/9348442437** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5548571,8.7553276
+- **osm/node/9348442440** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5488931,8.7793001
+- **osm/node/9348448144** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5430995,8.7137953
+- **osm/node/9348448147** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5277076,8.7494489
+- **osm/node/9348448148** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5303361,8.7724575
+- **osm/node/9522284239** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 45.9202549,9.0127956
+- **osm/node/9522284240** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 45.9178525,9.0105848
+- **osm/node/9522284241** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 45.9160954,9.0059517
+- **osm/node/9544412637** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5444058,8.5182083
+- **osm/node/9544412642** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5563736,8.5142815
+- **osm/node/9544412647** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5743474,8.5218815
+- **osm/node/9544412653** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5822953,8.5284007
 - **osm/node/9554256726** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.0572998,9.0365738
 - **osm/node/9554256728** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.0564862,9.0346009
+- **osm/node/9656288446** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5263747,8.9693706
+- **osm/node/9865362143** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4460781,8.489052
+- **osm/node/9880437076** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4347367,8.7268567
+- **osm/node/9880530853** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.449996,8.7115466
+- **osm/node/9957057317** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4739594,8.522063
+- **osm/node/10059351369** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2587801,8.6099716
+- **osm/node/10059351370** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2609817,8.5994264
+- **osm/node/10059351371** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2618832,8.5891768
+- **osm/node/10313568125** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4531513,8.3944918
+- **osm/node/10543003751** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4523001,8.8767632
+- **osm/node/10543003756** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4296519,8.9023958
+- **osm/node/10561851445** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5447033,8.5402111
+- **osm/node/10596519293** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3557296,8.893972
+- **osm/node/10687863331** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5777171,8.6173616
+- **osm/node/10733024964** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2581887,8.6283243
 - **osm/node/10789989569** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2474113,8.8702951
+- **osm/node/10790266346** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2605642,8.5934813
 - **osm/node/10801360820** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2386002,8.862775
 - **osm/node/10816621444** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2475127,8.8203153
 - **osm/node/10816621446** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2492862,8.8258769
+- **osm/node/10870733998** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4539971,9.06236
+- **osm/node/10917648831** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 45.9034708,9.0468979
+- **osm/node/10917648832** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 45.9131363,9.0476704
 - **osm/node/10930189020** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.0574863,8.8556376
+- **osm/node/11586872708** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4591773,8.6325792
+- **osm/node/11586955315** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4836488,8.556534
 - **osm/node/11594240643** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2153893,8.7938717
+- **osm/node/11594978338** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.3679649,8.6967322
+- **osm/node/11618331712** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.2157223,8.5914102
+- **osm/node/12398543450** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.4382235,8.7161316
+- **osm/node/12439638944** — natural=peak node has no name tag; skipped from map (cannot label). Coordinate: 46.5477293,8.8422337
 
-## Peaks with no elevation (lift ele-check impossible) (4)
+## Peaks with no elevation (lift ele-check impossible) (22)
 
+- **Torrent Basso** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Monte Torri** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
 - **Cima di Aiarlo** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Sasso del Cucù** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
 - **Monte Verita** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **La Fiamma** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Corni di Boden** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Poncione Pro do Roduc** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
 - **Mitria** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
 - **Gemelli** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **San Rocco** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Poncione di Tremorgio** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **La Scíma da Dòia** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Cima di Uomo** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Cima di Piatto** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Poncione di Löita del Pizzo** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Anticima** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Piz Vainano** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Pizzo della Valletta** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Pizzo Quadro** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Pt. 2583** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
+- **Chironico Boulder Area 21 Blocco 2** — peak has no usable ele tag; elevation-based lift matching cannot be verified for it.
 
-## Local / operator policy UNKNOWN (default) (151)
+## Local / operator policy UNKNOWN (default) (640)
 
+- **Basòdino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madone Grosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Limidario** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte San Giorgio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte San Salvatore** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Tamaro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Zucchero** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Sole** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Rosso di Ribia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torent Alto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Gambarogno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Faierone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Lema** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Bre** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cardada** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto Croce** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sasso Palazzo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Roveraccio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Boglia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Bar** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Gazzirola** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Caval Drossa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Cima Cavrighe** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Arbostora** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Pescia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Camoghè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **San Giorgio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **San Bernardo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Matro Rotondo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sasso Scuro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Screvia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Sasso Grande** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Ogè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Colombe** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Mosè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sassi Palazzi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Sirti** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Cadrigna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Borgna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Pravello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Materone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Leone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Chilchhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Lucendro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cimetta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Corona dei Pinci** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Rierna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Mezzodì** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Cramosino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Brünesc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Malora** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo d'Ogliè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Magno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Pola** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Gradiccioli** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Ferraro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Föisc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pian Alto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Cramalina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Ruscada** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto della Croce** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto d'Arbino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Dosso dell'Ora** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Dosso Bello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Lunga** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Scaiee** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Lo Stallone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Sasso della Gallina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Cruit** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Forcella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piccolo Corno Gries** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Lago** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Hüenerstock** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Pesciora** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Cristallina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Corno Gries / Grieshorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Vallegia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Nero** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima delle Cicogne, WSW** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cadolcia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torrone Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto di Cima** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Sassalto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Generoso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Baraghetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Crocetta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Termine Quadro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto dei Ciapitt** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima d'Erbea Occidentale** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Madone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo d’Orgnana** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Cavegna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dell'Alpe Gelato** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pianca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Cregnell** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Tramalitt** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Catögn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Poncione del Vènn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Sascòla** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Bri** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione della Marcia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta di Spluga** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo delle Pecore** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Ricuca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Broglio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Bièla - Wandlfuhhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torrent Basso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Corona di Redòrta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Bianca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Piancoi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Biasagn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Scinghign** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Castello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Soveltra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pulpito** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Penca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Tre Corni** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mottone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Fiorina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Marchhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzi di Morghirolo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima delle Donne** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo San Giacomo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Cavagnöö** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cresta del Coro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Grandinagia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto Crostel** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mottarone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione della Forca di Cristallina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Narèt** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Sassello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Il Madone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Campello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Gerenhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dell'Uomo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima dell'Uomo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Madone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Gaggio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Basal** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima del Masnee** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima della Costa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Barone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Campolungo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Canà** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Dromegio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Forno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Lambro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Prévat** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima della Bianca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Camadra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Gana Bianca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Gana Rossa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Croce del Bosc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Le Pipe** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Molinera** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz Rondadura** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Bareta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Molare** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Pianca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Predèlp** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Rossetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo d'Era** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Corvo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Cadrèigh** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Cassimoi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Nara** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione d'Arbione** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Mezzo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta di Stou** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta di Larescia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pécianett** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso di Luzzone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sosto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torrone di Nav** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Zucchero** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Covreto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Corbaro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **L'Uomo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **P. Rüscada** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sassariente** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Folcra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Gararesc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Sella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Vespero** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Ghiacciaio di Sasso Nero** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Lago Scuro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dell'Arzo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Röd** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione dei Laghetti** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione della Bolla** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Braga** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Aula** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Peloso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Salmone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Fumadiga** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Meda** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Sassello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Fibbia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Lògia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz Jut** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Plattenberg** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Rheinquellhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torrone di Garzora** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Vernokhörner** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Cavergno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Colmo di San Bernardo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Cucco meridionale** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Segor** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Madom da Sgióf** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz di Strega** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Ramulazz** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Pianacio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima dei Cogn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Puntone della Parete** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima d'Oerz** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Madone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Gana Rossa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Piancabella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Tamaretto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima del Lago** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Om Cupign** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Paina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Stanga** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Paré di Scut** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Predèlp W** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dei Toroi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Toròi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Fracchia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima della Trosa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pianascio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzin** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Mondini** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Rocchetta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima Moncucco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Mataron del Matro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Calescio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Mataron dei Cugnoli** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Camoghè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Tom** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Collina del Penz** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Verità** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Nufenenstock** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cimetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motto Rotondo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Poncino della Croce** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Poncione del Macello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Uomo del Sasso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Bidensc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Scarion** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Vogorno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione d'Arzo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima del Lambro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Filo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Varozzeira** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta delle Loite** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Poncione Piancascia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz Gaglianera** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo di Corgella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Taneda** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Rossa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sasso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Magino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Breno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Zottone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piano del Poncione** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Torri** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Muncréch** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Biasca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Lago** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Muscioi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Masnan** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motta d'Osogna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mottone di Cava** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mottone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Magn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Morisciöi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Croadino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Verde** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Costisc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Nimi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Aiarlo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo coca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Muretto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Albèr** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sass d'Argent** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Güi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madonnetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Guidà** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Dosso D'Arla** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **I Vajolett** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Col du Scimi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz Denter** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz Tanelin** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Campo Tencia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Caslano** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **La Colma** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Cruarescio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pecian** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncionetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Nara** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Bianco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Medeglia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Matro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Punta Fronzina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso del Cucù** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Creste** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Munzelum** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima dell'Oress** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Bedéia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Medola** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Calba** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Cazzola** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Verita** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima dei Torrioni** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Mataron** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Catelina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima alla Pianca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione Sambuco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Poncione Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Astorio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte San Giorgio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzit** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Chiegg** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cimetta d'Orino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Del Simano** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte S. Agata** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Cioltro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Marumo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Valletta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Val Piana** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Manió (anticima est)** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Cassina Baggio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Cassina Baggio (anticima ovest)** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Grandinagia (anticima ovest)** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Fiamma** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione Cavagnolo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sotto Bar** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **La Montagnola** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sciaroni** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Ur Mött da Leléta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Bedeia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Pellegrino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Perosa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Paglione** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sasso Torricello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Camusio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima Torrione** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto di Galbirona** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Moncucco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Morisciolo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima d'Erbea Orientale** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Corni di Boden** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sermonte** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Visghéd** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo d'Eus** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **La Manèra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
@@ -138,56 +493,292 @@ Every record below was **ambiguous or unconfirmed** during the fetch. Nothing he
 - **Pizzo Ometto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo Fedora** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo di Corbella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pioda Bagnata** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Colletta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso del Pino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Rovrè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motto Ferrino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Bigorio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Monte Giove** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Bombögn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Matro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Moschera** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Rosso di Ribia Cima E** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Aquila** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Toroi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Sassina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Dosso Pallanza** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cervello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Maiocca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Montalbano** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Corno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piattelli del Piatto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Scheggia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Colmetta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Salariel** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motto della Costa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motto Rotondo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Forcarella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Mattarone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motta Grande** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Montaccio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Calangelo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Induno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Santa Maria** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte San Bernardo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Filo delle Lettere** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzi del Rabbioso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Motto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Matarello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Val Mala** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Tòr** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Alzasca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Monte Cisterna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Torrone Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz de Martum** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Puncio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizen** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Poncione d'Alnasca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Mött** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Matro di Stinchè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Lago** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Cima Palazzi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Pecora** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Taneda** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Rossa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Barbarera** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Corandoni** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Schenadüi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione Pro do Roduc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Passo Comasnengo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Crozlina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione del Laghetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Dosso delle Mede** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Stägenhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Siwerbenhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dell'Uomo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sass dal Gatt** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Paretina dei Chiodi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Mitria** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Gemelli** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
-- **Cima di Castello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Pian Forno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima d'Efra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **San Rocco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Croce** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mattorino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima Sgiu** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Pinadee** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Amianto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima del Casletto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Sorda** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta di Val Scaradra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Stanga** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motto dei Fiori** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mognoi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Sassalto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Rossa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madonino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo d'Orsalietta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Camino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo d'Orsalìa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Piènsgia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Solögna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Grosshorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Kleinhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madone di Formazöö** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Testin** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madone di Camedo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Cazzana** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzi di Valeri** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dei Foiòi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Piatto di Röd** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Mascarpino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Mezzodi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mataruch** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Testa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Meda** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto della Croce** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mottone di Garzonera** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Tremorgio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Mezzodi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Piano d'Ört** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto di Pian Pizzo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto del Toro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Ruino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncionetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pianca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **I Gemelli** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Croce** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Teste** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Gallo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Al Pizz dala Bássa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Scíma da Dòia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncionetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto di Vinei** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motto della Coda** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Rotondo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cucchetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Mött di Pègor** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Nass** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima della Negra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima del Laghetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Uomo di Sasso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Forca di Casséo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Forca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima dei Toroi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Caslett** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Alto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Erra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Pianché** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pianca Bella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cogn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Uomo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Campale** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Laghetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione Croara** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione la Fopa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Campala** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madàs** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Triangolino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dei Chènt** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Cocco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Castello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Scima da Sbordann** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Piatto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Rasiva** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sgemögna** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Cardèd** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima di Screvia Süd** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **I Doss** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Scheggione** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Schwarzlochhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Prosa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Posmeda** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Forca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Uomo d'Arbione** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Löita del Pizzo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Canariscio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto della Conca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Monte Rotondo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Pizzo dei Laghetti** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Anticima** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cimetta di Pianascio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motto del Laghetto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motom** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Stabiello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta Negra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Colman** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Piz Vainano** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Piatto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dei Tirz** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Valletta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Sciresa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Motarüch** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto del Fornale di Rüscada** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto della Fame** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Torrettone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Al Moton** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dei Matörgn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Montaccio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Tschörten - Stupa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Basso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Filo d'Afata** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cimetta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cima d'Aspra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **All'Uomo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **El Mött dal Tir** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Larasedo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto del Toro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cavallo Bianco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto di Leveno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Scíma da Stüéll** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mottale** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Mezzodì** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Zucchero** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Uomo di Moncucco** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Cròs Pizzitt** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Scima di Müzz** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Scrigno di Poltrinone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta di Sgiuèll** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Mezzodì** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Campanin di Stabio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Lago** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Nèdro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motte Albei** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sprügh Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione di Piancalunga** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Mottone di Comasnè** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Rossa** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima del Muro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima del Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Massari** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Bello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **La Scíma da Vacarísc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **La Scíma do Picóll** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso del Calaséd** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Campanile** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima dei Larici** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motte Alte** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Fòpp** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Brasciana** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Fiorasca** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Costone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Kleines Grieshorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **El Ponción di Leghítt** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Rosso** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Corona dei Sasselli** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Stegnone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torói di Sopra** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Paràula** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Cuaschia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Al Métt di Salèi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Lei di Cima** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima delle Pecore** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncione Gariói** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Cristallina** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motta delle Fontane** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Sassada** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **La Scíma di Péüri** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dei Merli** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo della Vena Nuova** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Madonino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Partüs** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Uomo del Prüch** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo dei Piodisc** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punta del Corvo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Chilchhorn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Ciavena Alta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Poncioni di Pontino** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo del Corte Vecchio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Pianchína** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Stabbiello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Om Piategn** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Sceru** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Medee di Pietro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Föpia** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima di Piancra Bella** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Fieud** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Torói di Sotto** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Agazzòi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Caldözz** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Marcio** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Culmèta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto dei Ciavéi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **La Motta** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Motto Rotondo** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Piandugiöi** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo Quadro** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Bòrsgen** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Sasso di Crée** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pt. 2583** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Punto 905** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Sasso Bello** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
 - **Poncione di Piota** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Pizzo di Claro / Visagno** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Cima die Gagnone** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
+- **Chironico Boulder Area 21 Blocco 2** — local/operator drone policy not confirmed; defaulted to unknown. Check the cable-car/tourism operator directly.
