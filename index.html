@@ -13,7 +13,16 @@
       <strong>Ticino Peaks</strong>
       <span class="sub">drone-flight planning aid · Canton Ticino, CH</span>
     </div>
-    <button id="legendToggle" type="button" aria-expanded="true">Legend</button>
+    <div class="tools">
+      <div class="search-wrap">
+        <input id="search" type="text" placeholder="Search peak…" autocomplete="off"
+               aria-label="Search peak" />
+        <ul id="searchResults" class="hidden"></ul>
+      </div>
+      <button id="adminToggle" type="button" aria-pressed="false">Admin</button>
+      <button id="exportBtn" type="button" class="hidden" title="Download overrides.json">Export</button>
+      <button id="legendToggle" type="button" aria-expanded="true">Legend</button>
+    </div>
   </header>
 
   <div id="notFetched" class="banner hidden">

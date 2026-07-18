@@ -251,10 +251,11 @@ def fetch_lifts():
         + "("
         + _scope_filter('way["aerialway"~"cable_car|gondola|chair_lift"]')
         + _scope_filter('relation["aerialway"~"cable_car|gondola|chair_lift"]')
+        + _scope_filter('way["railway"="funicular"]')
         + ");"
         + "out body geom;"
     )
-    print(f"STEP 1: querying Overpass for aerialway lifts (scope={SCOPE}) ...")
+    print(f"STEP 1: querying Overpass for lifts + funiculars (scope={SCOPE}) ...")
     res = overpass(q)
     lifts = []
     for el in res.get("elements", []):
@@ -270,14 +271,17 @@ def fetch_lifts():
             continue
         endpoints = [(geom[0]["lat"], geom[0]["lon"]),
                      (geom[-1]["lat"], geom[-1]["lon"])]
+        lift_type = tags.get("aerialway")
+        if not lift_type and tags.get("railway") == "funicular":
+            lift_type = "funicular"
         lifts.append({
             "osm_id": el["id"],
             "osm_type": el["type"],
             "name": tags.get("name"),
-            "aerialway": tags.get("aerialway"),
+            "aerialway": lift_type,
             "endpoints": endpoints,
         })
-    print(f"  found {len(lifts)} lifts (cable_car/gondola/chair_lift)")
+    print(f"  found {len(lifts)} lifts (cable_car/gondola/chair_lift/funicular)")
     return lifts
 
 

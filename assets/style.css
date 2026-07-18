@@ -24,11 +24,56 @@ body {
 }
 #topbar .title strong { font-size: 15px; }
 #topbar .sub { opacity: .8; margin-left: 8px; font-size: 12px; }
-#legendToggle {
+#topbar .tools { display: flex; align-items: center; gap: 8px; }
+#topbar .tools button {
   background: #1d4a61; color: #fff; border: 0; border-radius: 6px;
-  padding: 6px 12px; cursor: pointer;
+  padding: 6px 12px; cursor: pointer; font-size: 13px;
 }
-#legendToggle:hover { background: #266182; }
+#topbar .tools button:hover { background: #266182; }
+#adminToggle[aria-pressed="true"] { background: #b06a2f; }
+#adminToggle[aria-pressed="true"]:hover { background: #c67b3a; }
+
+.search-wrap { position: relative; }
+#search {
+  width: 190px; padding: 6px 10px; border: 0;
+  border-radius: 6px; font-size: 13px;
+}
+#searchResults {
+  position: absolute; top: 34px; left: 0; right: 0; z-index: 1200;
+  list-style: none; margin: 0; padding: 4px; max-height: 320px; overflow: auto;
+  background: #fff; color: var(--ink); border: 1px solid #cfd6dc;
+  border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.18);
+}
+#searchResults.hidden { display: none; }
+#searchResults li {
+  padding: 6px 8px; border-radius: 5px; cursor: pointer;
+  display: flex; justify-content: space-between; gap: 8px;
+}
+#searchResults li:hover, #searchResults li.active { background: #eaf1f5; }
+#searchResults li .el { color: #6b747c; font-size: 12px; }
+#searchResults li .none { color: #9aa0a6; padding: 6px 8px; cursor: default; }
+
+/* Admin edit form inside popup */
+.edit { border-top: 2px solid #b06a2f; margin-top: 8px; padding-top: 8px; }
+.edit h4 { margin: 0 0 6px; font-size: 12px; color: #b06a2f; text-transform: uppercase; letter-spacing: .04em; }
+.edit label { display: block; font-size: 12px; font-weight: 600; margin: 6px 0 2px; }
+.edit select, .edit input, .edit textarea {
+  width: 100%; box-sizing: border-box; font-size: 12px; padding: 4px 6px;
+  border: 1px solid #cfd6dc; border-radius: 5px; font-family: inherit;
+}
+.edit textarea { resize: vertical; min-height: 34px; }
+.edit .btns { display: flex; gap: 6px; margin-top: 8px; }
+.edit .btns button {
+  flex: 1; border: 0; border-radius: 6px; padding: 6px; cursor: pointer;
+  font-size: 12px; font-weight: 600; color: #fff;
+}
+.edit .save { background: #2e9e4f; }
+.edit .reset { background: #9aa0a6; }
+.edited-flag {
+  display: inline-block; font-size: 10px; font-weight: 700; color: #fff;
+  background: #b06a2f; border-radius: 8px; padding: 0 6px; margin-left: 6px;
+}
+.peak-marker.is-edited { outline: 2px solid #b06a2f; outline-offset: 1px; }
 
 .banner {
   padding: 8px 14px; font-size: 13px;

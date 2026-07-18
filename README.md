@@ -60,6 +60,21 @@ markers until you run this — so nothing fabricated is ever displayed.
 > `overpass-api.de` and `api3.geo.admin.ch`, so the live fetch has **not** been
 > run here. Run it in an environment with outbound internet to populate the map.
 
+## Using the map
+
+- **Search** — type a peak name in the top-bar box; pick a result to fly there and
+  open its popup.
+- **Three badges per peak** — G (gondola), A (BAZL airspace), L (local/operator),
+  shown separately and never merged.
+- **Admin edit view** — click **Admin** to edit any peak's gondola status, local /
+  operator status, source URL and notes. Edits are saved in your browser
+  (`localStorage`) and marked with an orange "edited" outline. Click **Export** to
+  download `overrides.json`; commit it as `data/overrides.json` and everyone sees
+  the corrections. Overrides are a **separate layer** applied on top of the fetched
+  data, so manual edits never overwrite the live-derived values, and a re-fetch
+  keeps them. Example use: San Salvatore's lift is a funicular the base map draws
+  but the matcher may miss — set its gondola status by hand here.
+
 ## Local preview
 
 ```bash
