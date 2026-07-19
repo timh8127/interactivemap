@@ -78,8 +78,8 @@
       "match": { "name": "Monte San Salvatore", "osm_id": null },
       "status": "unknown",
       "source_url": "https://www.montesansalvatore.ch/en/",
-      "checked_date": "2026-07-18",
-      "note": "Checked the operator's homepage plus /en/mount-san-salvatore/, /en/activities/, /en/timetable-and-fares/, /en/contacts/ (Italian /it/ path 404s). No 'drone', 'UAV', or aerial-photography rule anywhere, no FAQ/regolamento page exists. Do not infer a ban from proximity to Lugano airport (LSZA) or the broadcast tower -- that is federal/BAZL airspace territory, a separate legal basis (see _readme), not operator policy."
+      "checked_date": "2026-07-19",
+      "note": "Three independent research passes (2026-07-18 and 2026-07-19), all landing on 'unknown': (1) operator homepage + /en/mount-san-salvatore/, /en/activities/, /en/timetable-and-fares/, /en/contacts/ (Italian /it/ path 404s); (2) plain web search 'Monte San Salvatore drone/droni/Drohnen' -- only stock-photo/drone-footage sites and the Lugano Region tourism page, neither an operator statement; (3) full site-nav sweep of every remaining page (funicular, panorama, company, annual-report, broadcasting-station, our-partners, ristorante-vetta, meeting, hiking, via-ferrata, relax-and-children, nature-trail, events, culture/museum/origin-of-the-mountain/church-history/curiosity-corner) plus a search for a governing foundation or cantonal nature-reserve designation covering the summit -- none found. No 'drone', 'UAV', or aerial-photography rule anywhere on montesansalvatore.ch; no FAQ/regolamento page exists. Do not infer a ban from proximity to Lugano airport (LSZA) or the broadcast tower -- that is federal/BAZL airspace territory, a separate legal basis (see _readme), not operator policy. This is now well-enough searched that 'unknown' should be read as a confident negative, not an under-search -- re-check only if the operator publishes new content."
     },
     {
       "match": { "name": "Monte Bre", "osm_id": null },
